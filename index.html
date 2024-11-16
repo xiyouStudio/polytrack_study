@@ -38,7 +38,12 @@
     <main class="container mx-auto px-4 py-16 max-w-4xl">
         <section class="mb-20">
             <div class="w-full aspect-[16/9] bg-white/80 backdrop-blur-sm rounded-xl shadow-sm overflow-hidden border border-gray-100">
-                <iframe src="https://app-polytrack.kodub.com/0.4.2/?" class="w-full h-full border-0"></iframe>
+                <iframe id="gameFrame" 
+                        src="https://app-polytrack.kodub.com/0.4.2/?" 
+                        class="w-full h-full border-0"
+                        onload="handleFrameLoad()"
+                        onerror="handleFrameError()">
+                </iframe>
             </div>
         </section>
 
@@ -210,5 +215,26 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        function handleFrameLoad() {
+            const frame = document.getElementById('gameFrame');
+            // 添加随机参数到URL以防止缓存
+            if (!frame.src.includes('cache=')) {
+                frame.src = frame.src + '&cache=' + Math.random();
+            }
+        }
+
+        function handleFrameError() {
+            console.error('Frame loading failed, attempting to reload...');
+            const frame = document.getElementById('gameFrame');
+            frame.src = frame.src;
+        }
+
+        // 页面加载完成后执行
+        window.addEventListener('load', function() {
+            handleFrameLoad();
+        });
+    </script>
 </body>
 </html>

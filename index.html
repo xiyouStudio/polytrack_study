@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polytrack Game - Experience the Ultimate Racing Simulation</title>
+    <meta name="description" content="Play Polytrack, the innovative racing simulation game that brings the thrill of track racing to your screen. Experience realistic physics and engaging gameplay.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2D3436',
+                        secondary: '#636E72',
+                        accent: '#00B894',
+                        'soft-blue': '#F0F7FF',
+                        'soft-purple': '#F5F3FF',
+                        'soft-pink': '#FDF2F8',
+                        'soft-green': '#F0FDF4',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-gradient-to-b from-soft-blue via-white to-soft-purple text-primary">
+    <!-- <header class="py-16 text-primary">
+        <div class="container mx-auto px-4 max-w-4xl text-center">
+            <h1 class="text-7xl font-bold tracking-tight">Polytrack Racing</h1>
+        </div>
+    </header> -->
+
+    <main class="container mx-auto px-4 py-16 max-w-4xl">
+        <section class="mb-20">
+            <div class="w-full aspect-[16/9] bg-white/80 backdrop-blur-sm rounded-xl shadow-sm overflow-hidden border border-gray-100">
+                <iframe src="https://app-polytrack.kodub.com/0.4.2/?" class="w-full h-full border-0"></iframe>
+            </div>
+        </section>
+
+        <section class="mb-20 grid md:grid-cols-2 gap-8">
+            <div class="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm">
+                <h3 class="text-2xl font-semibold mb-6 text-accent">Basic Controls</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3">
+                        <span class="bg-accent/10 text-accent p-2 rounded-lg">⌨️</span>
+                        <span>WASD or Arrow keys for movement</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="bg-accent/10 text-accent p-2 rounded-lg">⏎</span>
+                        <span>Space bar for special actions</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="bg-accent/10 text-accent p-2 rounded-lg">🖱️</span>
+                        <span>Mouse control for camera angles</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="bg-accent/10 text-accent p-2 rounded-lg">⏹</span>
+                        <span>Press ESC to pause your game</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-sm">
+                <h3 class="text-2xl font-semibold mb-6 text-accent">Advanced Techniques</h3>
+                <ul class="space-y-4">
+                    <li class="flex items-center gap-3">
+                        <span class="bg-accent/10 text-accent p-2 rounded-lg">🏎️</span>
+                        <span>Master drift techniques</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="bg-accent/10 text-accent p-2 rounded-lg">🗺️</span>
+                        <span>Learn optimal racing lines</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="bg-accent/10 text-accent p-2 rounded-lg">🚀</span>
+                        <span>Utilize boost mechanics</span>
+                    </li>
+                    <li class="flex items-center gap-3">
+                        <span class="bg-accent/10 text-accent p-2 rounded-lg">🏎️</span>
+                        <span>Practice cornering strategies</span>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="mb-20 space-y-12 bg-gradient-to-br from-soft-green to-soft-blue p-8 rounded-2xl">
+            <div class="prose prose-lg max-w-none">
+                <h2 class="text-4xl font-bold mb-12 text-primary text-center">About Polytrack Racing</h2>
+                
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <div class="bg-gradient-to-br from-blue-50 to-purple-50 p-8 rounded-2xl">
+                        <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-600 to-purple-600 inline-block text-transparent bg-clip-text">Polytrack Innovation</h3>
+                        <ul class="list-none space-y-3 text-gray-700">
+                            <li class="flex items-center gap-2">
+                                <span class="text-blue-600">•</span>
+                                Polytrack's advanced physics engine simulates real-world racing conditions
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-blue-600">•</span>
+                                Multiple Polytrack racing environments with dynamic weather systems
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-blue-600">•</span>
+                                Scientifically designed Polytrack surface technology
+                            </li>
+                            <li class="flex items-center gap-2">
+                                <span class="text-blue-600">•</span>
+                                Realistic vehicle handling on Polytrack surfaces
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-emerald-50 to-teal-50 p-8 rounded-2xl">
+                        <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-emerald-600 to-teal-600 inline-block text-transparent bg-clip-text">The Polytrack Experience</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Polytrack Racing revolutionizes the racing simulation genre with its innovative approach to surface technology and physics. Our advanced Polytrack system incorporates real-world racing principles, creating an immersive experience that adapts to various weather conditions and racing styles. The unique Polytrack surface technology ensures consistent performance across all racing environments.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-gradient-to-br from-orange-50 to-red-50 p-8 rounded-2xl">
+                        <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-orange-600 to-red-600 inline-block text-transparent bg-clip-text">Polytrack Community</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            Join the growing global Polytrack community where racers worldwide compete and share strategies. The Polytrack racing platform hosts regular tournaments and events, offering opportunities to test your skills on various Polytrack surfaces. Our community benefits from continuous updates and improvements to the Polytrack racing experience.
+                        </p>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-violet-50 to-fuchsia-50 p-8 rounded-2xl">
+                        <h3 class="text-2xl font-bold mb-4 bg-gradient-to-r from-violet-600 to-fuchsia-600 inline-block text-transparent bg-clip-text">Technical Excellence</h3>
+                        <p class="text-gray-700 leading-relaxed">
+                            The Polytrack gaming platform delivers exceptional performance across all devices. Our advanced Polytrack technology ensures smooth gameplay while maintaining realistic physics simulations. Experience the perfect balance of accessibility and depth that only Polytrack Racing can provide.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-20 space-y-8">
+            <h2 class="text-4xl font-bold mb-12 text-primary text-center">Frequently Asked Questions</h2>
+            
+            <div class="space-y-6">
+                <div class="bg-gradient-to-r from-blue-50 to-indigo-50 p-8 rounded-2xl">
+                    <h3 class="text-xl font-bold mb-3 text-primary">What makes Polytrack's surface technology unique?</h3>
+                    <p class="text-gray-700">Polytrack's surface technology combines advanced physics simulation with real-world racing principles. Our unique mixture of synthetic materials and innovative design ensures consistent performance across various weather conditions, making each racing experience both realistic and engaging.</p>
+                </div>
+
+                <div class="bg-gradient-to-r from-purple-50 to-pink-50 p-8 rounded-2xl">
+                    <h3 class="text-xl font-bold mb-3 text-primary">How does Polytrack adapt to different weather conditions?</h3>
+                    <p class="text-gray-700">Polytrack's advanced weather system dynamically adjusts track conditions in real-time. The surface responds authentically to changes in temperature, precipitation, and humidity, providing racers with a truly immersive experience that mirrors real-world racing challenges.</p>
+                </div>
+
+                <div class="bg-gradient-to-r from-green-50 to-emerald-50 p-8 rounded-2xl">
+                    <h3 class="text-xl font-bold mb-3 text-primary">What training features does Polytrack offer?</h3>
+                    <p class="text-gray-700">Polytrack provides comprehensive training facilities with over 300 kilometers of customizable tracks. Users can practice various racing techniques, from basic cornering to advanced drift mechanics, all while receiving real-time feedback on their performance.</p>
+                </div>
+
+                <div class="bg-gradient-to-r from-yellow-50 to-amber-50 p-8 rounded-2xl">
+                    <h3 class="text-xl font-bold mb-3 text-primary">How does Polytrack maintain consistent racing conditions?</h3>
+                    <p class="text-gray-700">Each Polytrack surface is scientifically designed to maintain uniform quality and performance. Our advanced technology ensures a dust-free environment with optimal energy return, requiring no irrigation system while providing consistent racing conditions throughout all seasons.</p>
+                </div>
+
+                <div class="bg-gradient-to-r from-red-50 to-orange-50 p-8 rounded-2xl">
+                    <h3 class="text-xl font-bold mb-3 text-primary">What community features are available in Polytrack?</h3>
+                    <p class="text-gray-700">Polytrack features a vibrant global community with regular tournaments and events. Players can participate in worldwide competitions, share racing strategies, and benefit from continuous updates to the Polytrack racing experience. Our platform supports both casual racers and competitive professionals.</p>
+                </div>
+
+                <div class="bg-gradient-to-r from-teal-50 to-cyan-50 p-8 rounded-2xl">
+                    <h3 class="text-xl font-bold mb-3 text-primary">How does Polytrack ensure optimal performance across devices?</h3>
+                    <p class="text-gray-700">Polytrack's gaming platform is optimized for performance across all devices. Our advanced technology ensures smooth gameplay while maintaining realistic physics simulations, providing consistent quality whether you're racing on a desktop computer or mobile device.</p>
+                </div>
+
+                <div class="bg-gradient-to-r from-fuchsia-50 to-rose-50 p-8 rounded-2xl">
+                    <h3 class="text-xl font-bold mb-3 text-primary">What makes Polytrack suitable for both beginners and professionals?</h3>
+                    <p class="text-gray-700">Polytrack offers customizable difficulty levels and comprehensive training modules. From basic racing techniques to advanced professional strategies, our platform provides the perfect balance of accessibility and depth, making it ideal for racers of all skill levels.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-20 flex items-center justify-center gap-6 text-center">
+            <h3 class="text-lg font-semibold text-primary">Rate Polytrack</h3>
+            
+            <div class="flex items-center gap-1">
+                <button class="text-xl text-yellow-400 hover:scale-110 transition-transform">⭐</button>
+                <button class="text-xl text-yellow-400 hover:scale-110 transition-transform">⭐</button>
+                <button class="text-xl text-yellow-400 hover:scale-110 transition-transform">⭐</button>
+                <button class="text-xl text-yellow-400 hover:scale-110 transition-transform">⭐</button>
+                <button class="text-xl text-yellow-400 hover:scale-110 transition-transform opacity-50">⭐</button>
+            </div>
+
+            <div class="text-gray-600">
+                <span class="font-semibold">4.8</span>
+                <span class="text-sm">/5</span>
+                <span class="mx-2">·</span>
+                <span class="text-sm">1,860 votes</span>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-12 mt-20 border-t border-gray-100">
+        <div class="container mx-auto px-4 max-w-4xl">
+            
+            <div class="text-center text-gray-600 pt-8 border-t border-gray-100">
+                <p>&copy; 2024 Polytrack Racing Simulation. All rights reserved.</p>
+                <p class="mt-2 text-sm">Made with ❤️ by racing enthusiasts</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
